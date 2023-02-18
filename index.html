@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/owl.transitions.css">
+    <link rel="stylesheet" href="asset/css/main.css">
+    
+</head>
+<body>
+    
+    <div class="master">
+
+        <a href="#" class="logo">
+            <img src="asset/images/logo.png" alt="">
+        </a>
+        <div class="slider owl-carousel">
+            <div class="item">
+                <figure>
+                    <img src="asset/images/bank/img-1.jpg" alt="">
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="asset/images/bank/img-2.jpg" alt="">
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="asset/images/bank/img-3.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+        <form class="form-group">
+            <h1>Selamat Datang</h1>
+            <p class="mb-5">Mohon isikan formulir di bawah ini:</p>
+
+            <div class="input-wrap">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Nama</label>
+                        <input type="text" placeholder="Nama Anda">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email Anda">
+                    </div>
+                    <div class="col-6">
+                        <label for="">No. Telp</label>
+                        <input type="text" placeholder="No. Telepon Anda">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="spacer"><span>Alamat</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="">Provinsi</label>
+                        <select name="" id="">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="">Kabupaten/Kota</label>
+                        <select name="" id="">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="">Kecamatan</label>
+                        <select name="" id="">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Detail Alamat</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="spacer"><span>Info Kunjungan</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Asal Instansi</label>
+                        <input type="text" placeholder="Asal Instansi">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Alamat Instansi</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Bertemu Dengan</label>
+                        <select name="" id="">
+                            <option value="">Option 1</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Keperluan</label>
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button>Simpan</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".slider").owlCarousel({
+                singleItem: true,
+                autoPlay: true,
+                transitionStyle: "fade"
+            });
+        });
+    </script>
+</body>
+</html>

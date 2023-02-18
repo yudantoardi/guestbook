@@ -1,0 +1,362 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Inter', sans-serif;
+*/
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+.master,
+header,
+section,
+footer,
+figure,
+h1,h2,h3,h4,h5,h6{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.master{
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+
+p{
+    width: 100%;
+    float: left;
+}
+
+section{
+    padding: 80px 0;
+}
+
+figure img{
+    width: 100%;
+}
+.ratio{
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+.ratio-16{
+    padding-top: 56.25%;
+}
+.ratio-1{
+    padding-top: 100%;
+}
+.ratio-75{
+    padding-top: 75%;
+}
+.ratio-135{
+    padding-top: 135%;
+}
+.ratio img,
+.ratio iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-title{
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.btn{
+    min-width: 120px;
+    padding: 15px 30px;
+    font-size: 14px;
+}
+.btn-primary{
+    background: #026B33;
+    color: #fff;
+    border: none;
+}
+.btn-secondary{
+    background: none;
+    border: 2px solid #026B33;
+    color: #026B33;
+}
+
+.row{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.logo{
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    left: 60px;
+    z-index: 3;
+    text-align: left;
+}
+.logo img{
+    height: 100%;
+    object-fit: contain;
+}
+.slider{
+    width: 70%;
+    height: 100vh;
+}
+.slider.fullwidth{
+    width: 100%;
+}
+.slider .item{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+.slider .item figure{
+    width: 100%;
+    height: 100%;
+    background: #0167FE;
+}
+.slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.form-group{
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url(../images/form-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 40px 40px;
+}
+.form-group::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    background: url(../images/form-shadow.png) no-repeat right center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.form-group h1,
+.form-group label,
+.form-group p{
+    color: #fff;
+}
+.form-group label,
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    float: left;
+}
+.form-group label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select{
+    height: 48px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    border: none;
+    background: #fff;
+    padding: 0 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 10px;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline: none;
+}
+.form-group textarea{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.spacer{
+    width: 100%;
+    float: left;
+    margin: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+.spacer span{
+    display: inline-block;
+    padding-right: 10px;
+    background: #0167FE;
+    position: relative;
+    z-index: 2;
+}
+.spacer::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.input-wrap{
+    float: left;
+    width: 100%;
+    height: calc(100vh - 264px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 40px;
+    padding-bottom: 100px;
+}
+
+.button-wrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 40px;
+    background: #004CBC;
+    width: 100%;
+    z-index: 3;
+}
+.button-wrap button{
+    width: 100%;
+    height: 56px;
+    background: #f99500;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252525;
+}
+.button-wrap::before{
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: url(../images/gradient.svg) repeat-x;
+}
+
+.graphic{
+    width: 30%;
+    height: 100vh;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: url(../images/form-bg.jpg);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #fff;
+}
+.v-logo{
+    max-width: 100%;
+    display: inline-block;
+}
+.v-logo img{
+    width: 100%;
+}
+
+@media only screen and (max-width:1366px){
+    .slider{
+        width: 65%;
+    }
+    .form-group{
+        width: 35%;
+    }
+    .graphic{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:768px){
+    .logo{
+        top: 20px;
+        left: 16px;
+        position: absolute;
+    }
+    .slider{
+        width: 100%;
+        height: 300px;
+    }
+    .slider.fullwidth{
+        height: 100vh;
+    }
+    .slider .item{
+        height: 300px;
+    }
+    .slider.fullwidth .item{
+        height: 100vh;
+    }
+    .form-group{
+        width: 100%;
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 30px 0 30px 16px;
+        height: auto;
+        float: left;
+    }
+    .input-wrap{
+        padding-right: 16px;
+        height: auto;
+        padding-bottom: 200px;
+    }
+    .button-wrap{
+        position: fixed;
+    }
+
+    .graphic{
+        width: calc(100% - 32px);
+        height: 80vh;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
